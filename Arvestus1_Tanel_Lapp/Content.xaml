@@ -1,0 +1,59 @@
+﻿<Page
+    x:Class="Arvestus1_Tanel_Lapp.Content"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Arvestus1_Tanel_Lapp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Pivot>
+            <PivotItem Margin="15,12,15,0">
+                <PivotItem.Header>
+                    <StackPanel>
+                        <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE11F;" HorizontalAlignment="Center"></TextBlock>
+                        <TextBlock Text="Item 1" Margin="0,-5"></TextBlock>
+                    </StackPanel>
+                </PivotItem.Header>
+                <TextBlock FontFamily="Times New Roman" FontSize="30" Margin="20">Content 1</TextBlock>
+            </PivotItem>
+
+            <PivotItem Margin="15,12,15,0">
+                <PivotItem.Header>
+                    <StackPanel>
+                        <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE12A;" HorizontalAlignment="Center"></TextBlock>
+                        <TextBlock Text="Item 2" Margin="0,-5"></TextBlock>
+                    </StackPanel>
+                </PivotItem.Header>
+                <TextBlock FontFamily="Times New Roman" FontSize="30" Margin="20">Content 2</TextBlock>
+            </PivotItem>
+
+            <PivotItem Margin="15,12,15,0">
+                <PivotItem.Header>
+                    <StackPanel>
+                        <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE137;" HorizontalAlignment="Center"></TextBlock>
+                        <TextBlock Text="Item 3" Margin="0,-5"></TextBlock>
+                    </StackPanel>
+                </PivotItem.Header>
+                <TextBlock FontFamily="Times New Roman" FontSize="30" Margin="20">Content 3</TextBlock>
+            </PivotItem>
+        </Pivot>
+    </Grid>
+</Page>
